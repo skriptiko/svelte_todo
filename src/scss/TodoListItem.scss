@@ -1,0 +1,27 @@
+.TodoListItem {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation-duration: 0.3s;
+
+  &_Left {
+    display: flex;
+    align-items: center;
+  }
+
+  &_Label {
+    margin-left: 12px;
+  }
+
+  &_Remove {
+    cursor: pointer;
+    margin-left: 15px;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: grey;
+  }
+}
+

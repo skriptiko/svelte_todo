@@ -1,6 +1,24 @@
-main {
-    text-align: center;
-    padding: 1em;
-    max-width: 500px;
-    margin: 0 auto;
+@import '../assets/_colors.scss';
+
+.App {
+  background: linear-gradient(38deg, $base-primary 35%, $base-secondary 35%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_Content {
+    position: relative;
+
+    .Logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 80px;
+      height: 80px;
+      transform: translate(-50%, -70%);
+      z-index: 2;
+    }
+  }
 }

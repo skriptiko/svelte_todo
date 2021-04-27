@@ -1,15 +1,15 @@
-<style lang="scss">
-  @import "../scss/App.scss";
-</style>
-
 <script>
-  import Header from "./Header.svelte"
-  import Todo from "./Todo.svelte"
-
-  export let name
+  import Card from './Card.svelte'
 </script>
 
-<main>
-  <Header />
-  <Todo />
-</main>
+<style lang="scss">
+  @import '../scss/App.scss';
+</style>
+
+<div class="App">
+  <div class="App_Content">
+    <img class="Logo" src="./images/logo.png" alt="logo" />
+    <Card />
+  </div>
+
+</div>

@@ -1,5 +1,5 @@
 <script>
-  import TodoItem from './TodoItem.svelte'
+  import TodoItem from './TodoListItem.svelte'
 
   let data = [
     { id: 1, title: 'One', completed: false },
@@ -70,14 +70,7 @@
     bind:value={title}
     on:keydown={handleKeydown} />
 
-    {#each filteredData as item}
-      <div>
-        <TodoItem
-          {...item}
-          on:deleteTodo={handleDeleteTodo}
-          on:toggleComplete={handleToggleComplete} />
-      </div>
-    {/each}
+
 
   <div class="inner-container">
     <div>
