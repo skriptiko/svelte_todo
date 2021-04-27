@@ -23,6 +23,8 @@
     "date-fns": "^2.21.1",
     "node-sass": "^5.0.0",
     "sirv-cli": "^1.0.0",
-    "svelte-preprocess": "^4.7.2"
+    "svelte-icons": "^2.1.0",
+    "svelte-preprocess": "^4.7.2",
+    "uuid": "^8.3.2"
   }
 }

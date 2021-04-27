@@ -2,25 +2,33 @@
   import CardHeader from "./CardHeader.svelte";
   import Filter from "./Filter.svelte";
   import TodoList from "./TodoList.svelte";
+  import MdAdd from 'svelte-icons/md/MdAdd.svelte'
+  import { createEventDispatcher } from 'svelte';
 
-  let data = [
-    { id: 1, title: "One", completed: false },
-    { id: 2, title: "Second", completed: false },
-    { id: 3, title: "Thirst", completed: false }
-  ];
+  const dispatch = createEventDispatcher();
+
 
   let filter = "all";
+
+  export let todos;
+
 
   const handleFilterClick = (type) => {
     filter = type;
   };
 
-  $: filteredData =
+  const handleAddClick = () => {
+    dispatch('message', {
+      isAddPopupShown: true
+    });
+  };
+
+  $: filteredTodos =
     filter === "all"
-      ? data
+      ? todos
       : filter === "completed"
-      ? data.filter((todo) => todo.completed)
-      : data.filter((todo) => !todo.completed);
+      ? todos.filter((todo) => todo.completed)
+      : todos.filter((todo) => !todo.completed);
 </script>
 
 <style lang="scss">
@@ -28,13 +36,13 @@
 </style>
 
 <div class="Card">
-  <CardHeader countOfTasks={filteredData.length} />
+  <CardHeader countOfTasks={filteredTodos.length} />
 
-  <div class="Card_Add">
-    +
+  <div class="Card_Add" on:click={handleAddClick}>
+    <MdAdd />
   </div>
 
   <Filter selected={filter} onClick={handleFilterClick} />
 
-  <TodoList list={filteredData} />
+  <TodoList todos={filteredTodos} />
 </div>

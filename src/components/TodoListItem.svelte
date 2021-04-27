@@ -1,19 +1,20 @@
 <script>
-  import { createEventDispatcher } from 'svelte'
-  import { fly } from 'svelte/transition'
+  import { createEventDispatcher } from 'svelte';
+  import { fly } from 'svelte/transition';
+  import MdDelete from 'svelte-icons/md/MdDelete.svelte';
 
-  export let id
-  export let title
-  export let completed
+  export let id;
+  export let text;
+  export let completed;
 
   const dispatch = createEventDispatcher()
 
-  const deleteTodo = () => {
+  const handleDelete = () => {
     dispatch('deleteTodo', {
       id: id,
     })
   }
-  const toggleComplete = () => {
+  const handleComplete = () => {
     dispatch('toggleComplete', {
       id: id,
     })
@@ -29,8 +30,10 @@
     <input
       type="checkbox"
       bind:checked={completed}
-      on:change={toggleComplete} />
-    <span class="TodoListItem_Label" class:completed>{title}</span>
+      on:change={handleComplete} />
+    <span class="TodoListItem_Label" class:completed>{text}</span>
   </div>
-  <div class="TodoListItem_Remove" on:click={deleteTodo}>N</div>
+  <div class="TodoListItem_Remove" on:click={handleDelete}>
+    <MdDelete />
+  </div>
 </div>
