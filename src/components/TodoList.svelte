@@ -1,5 +1,5 @@
 <script>
-  import TodoListItem from './TodoListItem.svelte';
+  import TodoListItem from './TodoListItem.svelte'
   import MdNewReleases from 'svelte-icons/md/MdNewReleases.svelte'
 
   export let todos
