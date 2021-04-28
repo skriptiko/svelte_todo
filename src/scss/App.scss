@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   &_TrianglesWrap {
     width: 100%;
@@ -62,7 +63,7 @@
       left: 50%;
       width: 80px;
       height: 80px;
-      transform: translate(-50%, -70%);
+      transform: translate(-50%, -75%);
       z-index: 4;
     }
   }

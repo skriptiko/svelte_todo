@@ -3,10 +3,6 @@
   export let selected
 </script>
 
-<style lang="scss">
-  @import '../scss/Filter.scss';
-</style>
-
 <div class="Filter">
   <button
     class="Filter_Button"
@@ -27,3 +23,7 @@
     Completed
   </button>
 </div>
+
+<style lang="scss">
+  @import '../scss/Filter.scss';
+</style>

@@ -8,14 +8,16 @@
   let text = ''
 
   const handlePopupClose = () => {
-    dispatch('message', {
+    dispatch('popupClose', {
       isAddPopupShown: false
     });
   }
 
   const handleSubmit = () => {
-    dispatch('message', {
-      isAddPopupShown: false,
+    dispatch('popupClose', {
+      isAddPopupShown: false
+    });
+    dispatch('submit', {
       newTodo: {
         id: uuid(),
         completed: false,

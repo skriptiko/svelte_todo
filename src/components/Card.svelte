@@ -16,7 +16,7 @@
   }
 
   const handleAddClick = () => {
-    dispatch('message', {
+    dispatch('popupClose', {
       isAddPopupShown: true,
     })
   }
@@ -38,7 +38,11 @@
 
   <Filter selected={filter} onClick={handleFilterClick} />
 
-  <TodoList todos={filteredTodos} />
+  <TodoList
+    todos={filteredTodos}
+    on:deleteTodo={(e) => dispatch('deleteTodo', e.detail)}
+    on:toggleTodoComplete={(e) => dispatch('toggleTodoComplete', e.detail)}
+  />
 </div>
 
 <style lang="scss">

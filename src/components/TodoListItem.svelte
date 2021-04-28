@@ -15,8 +15,9 @@
     })
   }
   const handleComplete = () => {
-    dispatch('toggleComplete', {
+    dispatch('toggleTodoComplete', {
       id: id,
+      completed,
     })
   }
 </script>
