@@ -1,0 +1,8 @@
+.App.svelte-11khjx3.svelte-11khjx3{background:linear-gradient(38deg, #de354c 35%, #3c1874 35%);width:100%;height:100%;display:flex;align-items:center;justify-content:center}.App_Content.svelte-11khjx3.svelte-11khjx3{position:relative}.App_Content.svelte-11khjx3 .Logo.svelte-11khjx3{position:absolute;top:0;left:50%;width:80px;height:80px;transform:translate(-50%, -70%);z-index:2}
+.Card.svelte-1uelhm3{width:400px;border-radius:4px;background-color:#F3F3F3;box-shadow:0 0 10px rgba(40, 55, 71, 0.5)}
+.CardHeader.svelte-1osps4{padding:20px;display:flex;justify-content:space-between;align-items:center;background-color:rgba(40, 55, 71, 0.1);border-top-left-radius:4px;border-top-right-radius:4px}.CardHeader_Date.svelte-1osps4{display:flex;flex-direction:column;font-size:20px}
+.Filter.svelte-1yb51ov{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #283747;border-bottom:1px solid #283747;padding:20px}.Filter_Button.svelte-1yb51ov{font-size:18px;text-transform:uppercase;border:none;background:transparent;cursor:pointer;display:flex;align-items:center}.Filter_Button.active.svelte-1yb51ov{color:#932432}
+.TodoList.svelte-q187sf{padding:20px}
+.TodoListItem.svelte-m1p3pt.svelte-m1p3pt{margin-bottom:15px;display:flex;align-items:center;justify-content:space-between;animation-duration:0.3s}.TodoListItem_Left.svelte-m1p3pt.svelte-m1p3pt{display:flex;align-items:center}.TodoListItem_Label.svelte-m1p3pt.svelte-m1p3pt{margin-left:12px}.TodoListItem_Remove.svelte-m1p3pt.svelte-m1p3pt{cursor:pointer;margin-left:15px}.TodoListItem.svelte-m1p3pt .completed.svelte-m1p3pt{text-decoration:line-through;color:grey}
+
+/*# sourceMappingURL=bundle.css.map */
