@@ -28,6 +28,6 @@
     "svelte-icons": "^2.1.0",
     "svelte-preprocess": "^4.7.2",
     "uuid": "^8.3.2",
-    "svelte": "^3.0.0"
+    "svelte": "^3.49.0"
   }
 }
